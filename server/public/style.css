@@ -1,0 +1,25 @@
+/*SQL Calculator Styling Page*/
+body {
+   
+    background-color: rgb(179, 208, 239);
+}
+
+.flex-container {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+background: #f7f7f7;
+}
+h1 {
+    text-align: center;
+}
+
+.completed {
+    background-color: rgb(46, 110, 46);
+    color: white;
+}
+
+.delete {
+    background-color: rgb(227, 26, 26);
+    
+}

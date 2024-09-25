@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./scripts/axios.js"></script>
+  <script src="./scripts/client.js"></script>
+
+  <title>Bruce's SQL TO-DO List</title>
+</head>
+
+<body class ="flex-container"> <!--Container for the list of to-do items below here--->
+  <header class = "gradient">
+
+    <h1>Bruce's SQL TO-DO List</h1>
+  </header>
+<input id="toDoText" type="text" data-testid="toDoTextInput" placeholder="to-do text"> <!--Input field for new task/ To-Do item-->
+
+<button data-testid="submitButton" onClick="saveToDo(event)">Add Task</button>  <!--space where "ADD" button lives-->
+
+  <section>
+    <h4>To-Do Items</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Text</th>
+          <th>isComplete</th>
+          <th>Delete</th> <!--space where "Delete" button lives-->
+          <th>Complete</th>
+          <th>CompletedAt</th>
+
+          </tr>
+          </thead>
+          <tbody id="addItem">
+        </tbody>
+        </table>
+ 
+      </section>
+ </body>
+</html>
